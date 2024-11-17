@@ -1,0 +1,39 @@
+<!-- templates/index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Polynomial Calculator</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            padding: 50px;
+        }
+        .container {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center">Polynomial Calculator</h1>
+        <form action="/calculate" method="post">
+            <div class="form-group">
+                <label for="terms">Enter the polynomial terms (e.g. 3x^2+2x+4):</label>
+                <input type="text" class="form-control" id="terms" name="terms" required>
+            </div>
+            <div class="form-group">
+                <label for="x_value">Enter the value of x:</label>
+                <input type="number" class="form-control" id="x_value" name="x_value" required>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Calculate</button>
+        </form>
+    </div>
+</body>
+</html>

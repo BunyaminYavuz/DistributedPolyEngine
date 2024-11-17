@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Polynomial Calculation Result</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            padding: 50px;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .result {
+            margin-top: 30px;
+        }
+        .result p {
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center">Polynomial Calculation Result</h1>
+        <div class="result">
+            <p><strong>Result:</strong> {{ result }}</p>
+            <p><strong>Computation Time:</strong> {{ computation_time }} seconds</p>
+        </div>
+        <div class="text-center">
+            <a href="/" class="btn btn-primary">Calculate Again</a>
+        </div>
+    </div>
+</body>
+</html>
